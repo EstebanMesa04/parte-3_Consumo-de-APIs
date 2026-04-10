@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const headers = new Headers({
+/* const headers = new Headers({
   "Content-Type": "application/json",
   "x-api-key": "DEMO-API-KEY",
 });
@@ -9,9 +9,9 @@ var requestOptions = {
   method: "GET",
   headers: headers,
   redirect: "follow",
-};
+}; */
 
-export function useFetch(url) {
+export function useFetch(url, requestOptions) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
